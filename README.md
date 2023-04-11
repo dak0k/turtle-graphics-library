@@ -88,6 +88,9 @@ namespace MyProject
 }
 
 ```
+
+### Contributing
+If you would like to contribute to the Turtle Graphics Library, you can fork the GitHub repository and submit pull requests with your changes. Please follow the contributing guidelines for more information on how to contribute to the project.
 In this example, we create a Turtle object and a PictureBox object to serve as the canvas for drawing. We then set up the canvas by specifying its size and background color, and add it to a Form object. We use the PenDown() method to lower the turtle's pen to the canvas, and then use the Forward() and TurnRight() methods to draw a square. Finally, we use form.ShowDialog() to display the form with the canvas, and wait for the form to close before disposing of the turtle and canvas objects.
 
 You can customize the turtle's movements and drawing commands, as well as the canvas size, background color, and other settings, to create your own graphical designs using the C# Turtle Graphics Library.
