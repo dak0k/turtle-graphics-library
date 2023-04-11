@@ -12,7 +12,7 @@ To use this turtle graphics library in your C# project, you can follow these ste
 
 3. In your C# code, you can import the `TurtleGraphics` namespace to use the `Turtle` class. Here's an example:
 
-```csharp
+<code>
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -41,7 +41,7 @@ namespace MyProject
         }
     }
 }
-
+                                  </code>
 ##Example
 
 ```csharp
