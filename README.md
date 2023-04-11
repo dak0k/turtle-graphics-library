@@ -12,7 +12,7 @@ To use this turtle graphics library in your C# project, you can follow these ste
 
 3. In your C# code, you can import the `TurtleGraphics` namespace to use the `Turtle` class. Here's an example:
 
-<code>
+```csharp
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -41,7 +41,7 @@ namespace MyProject
         }
     }
 }
-                                  </code>
+```
 ##Example
 
 ```csharp
@@ -87,7 +87,7 @@ namespace MyProject
     }
 }
 
-
+```
 In this example, we create a Turtle object and a PictureBox object to serve as the canvas for drawing. We then set up the canvas by specifying its size and background color, and add it to a Form object. We use the PenDown() method to lower the turtle's pen to the canvas, and then use the Forward() and TurnRight() methods to draw a square. Finally, we use form.ShowDialog() to display the form with the canvas, and wait for the form to close before disposing of the turtle and canvas objects.
 
 You can customize the turtle's movements and drawing commands, as well as the canvas size, background color, and other settings, to create your own graphical designs using the C# Turtle Graphics Library.
