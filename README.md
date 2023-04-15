@@ -42,7 +42,7 @@ namespace MyProject
     }
 }
 ```
-##Example
+## Example
 
 ```csharp
 using System;
