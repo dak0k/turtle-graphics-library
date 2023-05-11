@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace TurtleGraphics
 {
-    public class Turtle
+    public class Turtle : IDisposable
     {
         private PictureBox _canvas;
         private Graphics _graphics;
@@ -39,17 +39,27 @@ namespace TurtleGraphics
 
         public void PenUp()
         {
+            _graphics.Dispose();
             _graphics = _canvas.CreateGraphics();
         }
 
         public void PenDown()
         {
+            _graphics.Dispose();
             _graphics = Graphics.FromImage(_canvas.Image);
         }
 
         public void Clear()
         {
             _graphics.Clear(Color.White);
+            _canvas.Image?.Dispose();
+            _canvas.Image = new Bitmap(_canvas.Width, _canvas.Height);
+            _graphics = Graphics.FromImage(_canvas.Image);
+        }
+
+        public void Dispose()
+        {
+            _graphics?.Dispose();
         }
     }
 }
